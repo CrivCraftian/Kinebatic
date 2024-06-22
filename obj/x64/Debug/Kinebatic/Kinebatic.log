@@ -1,0 +1,11 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(516,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  kbpdh.cpp
+  Application.cpp
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Application.h(19,23): warning C4251: 'Kinebatic::Application::windowSettings': struct 'sf::ContextSettings' needs to have dll-interface to be used by clients of class 'Kinebatic::Application'
+  (compiling source file 'src/Kinebatic/Application.cpp')
+  A:\Dev\Applications\SFML\KinebaticEngine\include\SFML\Window\ContextSettings.hpp(37,8):
+  see declaration of 'sf::ContextSettings'
+  
+  Kinebatic.vcxproj -> A:\Dev\Applications\SFML\KinebaticEngine\bin\x64\Debug\Kinebatic\Kinebatic.dll
+          1 file(s) copied.

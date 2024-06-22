@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sandbox", "Sandbox\Sandbox.vcxproj", "{382B0E44-EF38-4A46-87BC-FA667C0AAAC4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Kinebatic", "Kinebatic\Kinebatic.vcxproj", "{BD6785D8-EF3F-472E-B106-F781590E21DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{382B0E44-EF38-4A46-87BC-FA667C0AAAC4}.Debug|x64.ActiveCfg = Debug|x64
+		{382B0E44-EF38-4A46-87BC-FA667C0AAAC4}.Debug|x64.Build.0 = Debug|x64
+		{382B0E44-EF38-4A46-87BC-FA667C0AAAC4}.Release|x64.ActiveCfg = Release|x64
+		{382B0E44-EF38-4A46-87BC-FA667C0AAAC4}.Release|x64.Build.0 = Release|x64
+		{BD6785D8-EF3F-472E-B106-F781590E21DC}.Debug|x64.ActiveCfg = Debug|x64
+		{BD6785D8-EF3F-472E-B106-F781590E21DC}.Debug|x64.Build.0 = Debug|x64
+		{BD6785D8-EF3F-472E-B106-F781590E21DC}.Release|x64.ActiveCfg = Release|x64
+		{BD6785D8-EF3F-472E-B106-F781590E21DC}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {479FFFAF-C16B-4E7A-B52B-99B0AB276ED8}
+	EndGlobalSection
+EndGlobal
