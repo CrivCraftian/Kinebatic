@@ -51,7 +51,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)\bin\$(Platform)\$(Configuration)\$(ProjectName)</OutDir>
     <IntDir>$(SolutionDir)\obj\$(Platform)\$(Configuration)\$(ProjectName)</IntDir>
-    <TargetName>Kinebatic</TargetName>
+    <TargetName>Sandbox</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -60,14 +60,15 @@
       <PreprocessorDefinitions>KB_PLATFORM_WINDOWS;KB_DEBUG;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)\Kinebatic\src;$(SolutionDir)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Kinebatic\vendor\spdlog\include;$(SolutionDir)\Kinebatic\src;src;src\GameObjects;src\Scenes;$(SolutionDir)\include;src\GameObjects;src\Scenes;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>sbpch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>
-      </AdditionalLibraryDirectories>
-      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\lib;$(SolutionDir)\bin\$(Platform)\$(Configuration)\Kinebatic;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Kinebatic.lib;</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>
@@ -82,16 +83,18 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>KB_PLATFORM_WINDOWS;KB_RELEASE;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)\Kinebatic\src;$(SolutionDir)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Kinebatic\vendor\spdlog\include;$(SolutionDir)\Kinebatic\src;src;src\GameObjects;src\Scenes;$(SolutionDir)\include;$(SolutionDir)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>sbpch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\lib;$(SolutionDir)\bin\$(Platform)\$(Configuration)\Kinebatic;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Kinebatic.lib;</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>
@@ -99,12 +102,18 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\App.cpp" />
+    <ClCompile Include="src\GameObjects\Vertex.cpp" />
+    <ClCompile Include="src\Scenes\Level1.cpp" />
+    <ClCompile Include="src\App.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Kinebatic\Kinebatic.vcxproj">
       <Project>{bd6785d8-ef3f-472e-b106-f781590e21dc}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\GameObjects\Vertex.h" />
+    <ClInclude Include="src\Scenes\Level1.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

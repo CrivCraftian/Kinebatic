@@ -11,10 +11,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Kinebatic\Core.cpp" />
+    <ClCompile Include="src\Kinebatic\Log.cpp" />
+    <ClCompile Include="src\Kinebatic\Core\GameObject.cpp" />
+    <ClCompile Include="src\Kinebatic\Core\Scene.cpp" />
     <ClCompile Include="src\kbpdh.cpp" />
     <ClCompile Include="src\Kinebatic\Application.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Kinebatic\Log.h" />
+    <ClInclude Include="src\Kinebatic\Core\GameObject.h" />
+    <ClInclude Include="src\Kinebatic\Core\Scene.h" />
     <ClInclude Include="src\Kinebatic.h" />
     <ClInclude Include="src\kbpdh.h" />
     <ClInclude Include="src\Kinebatic\Application.h" />
@@ -71,7 +78,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SFML_STATIC;KB_PLATFORM_WINDOWS;KB_BUILD_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Kinebatic\src;$(SolutionDir)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Kinebatic\vendor\spdlog\include;$(SolutionDir)Kinebatic\src;$(ProjectDir)src\Core;$(SolutionDir)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>kbpdh.h</PrecompiledHeaderFile>
@@ -95,7 +102,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SFML_STATIC;KB_PLATFORM_WINDOWS;KB_BUILD_DLL;KB_RELEASE;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Kinebatic\src;$(SolutionDir)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Kinebatic\vendor\spdlog\include;$(SolutionDir)Kinebatic\src;$(SolutionDir)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>kbpdh.h</PrecompiledHeaderFile>

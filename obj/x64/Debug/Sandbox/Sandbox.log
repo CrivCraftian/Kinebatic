@@ -1,4 +1,28 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(516,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-  App.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(516,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  Vertex.cpp
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Log.h(18,42): warning C4251: 'Kinebatic::Log::s_CoreLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Kinebatic::Log'
+  (compiling source file 'src/GameObjects/Vertex.cpp')
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\memory(1525,7):
+  see declaration of 'std::shared_ptr<spdlog::logger>'
+  
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Log.h(19,42): warning C4251: 'Kinebatic::Log::s_ClientLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Kinebatic::Log'
+  (compiling source file 'src/GameObjects/Vertex.cpp')
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\memory(1525,7):
+  see declaration of 'std::shared_ptr<spdlog::logger>'
+  
+  Level1.cpp
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Log.h(18,42): warning C4251: 'Kinebatic::Log::s_CoreLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Kinebatic::Log'
+  (compiling source file 'src/Scenes/Level1.cpp')
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\memory(1525,7):
+  see declaration of 'std::shared_ptr<spdlog::logger>'
+  
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Log.h(19,42): warning C4251: 'Kinebatic::Log::s_ClientLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Kinebatic::Log'
+  (compiling source file 'src/Scenes/Level1.cpp')
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\memory(1525,7):
+  see declaration of 'std::shared_ptr<spdlog::logger>'
+  
+  Generating Code...
   Sandbox.vcxproj -> A:\Dev\Applications\SFML\KinebaticEngine\bin\x64\Debug\Sandbox\Sandbox.exe
