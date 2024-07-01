@@ -4,7 +4,6 @@ namespace KBProgram
 {
 	Vertex::Vertex()
 	{
-		SetSprite("Purple.png");
 	}
 
 	Vertex::~Vertex()
@@ -14,16 +13,16 @@ namespace KBProgram
 
 	void Vertex::Start()
 	{
-		Kinebatic::GameObject::Start();
+		kb::GameObject::Start();
 	}
 
 	void Vertex::Update()
 	{
-		Kinebatic::GameObject::Update();
+		kb::GameObject::Update();
 	}
 
 	void Vertex::End()
 	{
-		Kinebatic::GameObject::End();
+		kb::GameObject::End();
 	}
 }

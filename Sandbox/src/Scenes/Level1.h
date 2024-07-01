@@ -3,7 +3,7 @@
 
 namespace KBProgram
 {
-	class Level1 : public Kinebatic::Scene
+	class Level1 : public kb::Scene
 	{
 	public:
 		Level1();

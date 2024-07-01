@@ -1,7 +1,7 @@
 #include "kbpdh.h"
 #include "Scene.h"
 
-namespace Kinebatic
+namespace kb
 {
 	Scene::Scene()
 	{
@@ -19,7 +19,7 @@ namespace Kinebatic
 		_addedobjects = std::make_unique<std::vector<GameObject*>>();
 		_removedobjects = std::make_unique<std::vector<GameObject*>>();
 
-		std::cout << "Starting Scene!" << std::endl;
+		KB_CORE_INFO("Scene Initialised!");
 	}
 
 	void Scene::Update()
@@ -27,16 +27,28 @@ namespace Kinebatic
 		for (auto object : *_gameobjects)
 		{
 			object->Update();
+
+			for (auto shape : object->GetShapes())
+			{
+				shape->Draw(Core::GetWindow());
+			}
 		}
 	}
 
 	void Scene::End()
 	{
+		for (auto object : *_gameobjects)
+		{
+			object->End();
+		}
 
+		// KB_CORE_INFO("Scene Closed!");
 	}
 	void Scene::AddObject(GameObject* object, int x, int y)
 	{
 		object->SetPosition(sf::Vector2f(x, y));
 		_gameobjects->push_back(object);
+
+		object->Start();
 	}
 }

@@ -1,31 +1,21 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(516,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  Shape.cpp
+  Core.cpp
+  Log.cpp
   GameObject.cpp
-A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\GameObject.h(21,16): warning C4251: 'Kinebatic::GameObject::_position': class 'sf::Vector2<float>' needs to have dll-interface to be used by clients of class 'Kinebatic::GameObject'
-  (compiling source file 'src/Kinebatic/Core/GameObject.cpp')
-  A:\Dev\Applications\SFML\KinebaticEngine\include\SFML\System\Vector2.hpp(37,7):
-  see declaration of 'sf::Vector2<float>'
-  
-A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\GameObject.h(22,15): warning C4251: 'Kinebatic::GameObject::_texture': class 'sf::Texture' needs to have dll-interface to be used by clients of class 'Kinebatic::GameObject'
-  (compiling source file 'src/Kinebatic/Core/GameObject.cpp')
-  A:\Dev\Applications\SFML\KinebaticEngine\include\SFML\Graphics\Texture.hpp(48,25):
-  see declaration of 'sf::Texture'
-  
-A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\GameObject.h(23,14): warning C4251: 'Kinebatic::GameObject::_sprite': class 'sf::Sprite' needs to have dll-interface to be used by clients of class 'Kinebatic::GameObject'
-  (compiling source file 'src/Kinebatic/Core/GameObject.cpp')
-  A:\Dev\Applications\SFML\KinebaticEngine\include\SFML\Graphics\Sprite.hpp(47,25):
-  see declaration of 'sf::Sprite'
-  
-A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Log.h(18,42): warning C4251: 'Kinebatic::Log::s_CoreLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Kinebatic::Log'
-  (compiling source file 'src/Kinebatic/Core/GameObject.cpp')
-  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\memory(1525,7):
-  see declaration of 'std::shared_ptr<spdlog::logger>'
-  
-A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Log.h(19,42): warning C4251: 'Kinebatic::Log::s_ClientLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Kinebatic::Log'
-  (compiling source file 'src/Kinebatic/Core/GameObject.cpp')
-  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\memory(1525,7):
-  see declaration of 'std::shared_ptr<spdlog::logger>'
-  
-     Creating library A:\Dev\Applications\SFML\KinebaticEngine\\bin\x64\Debug\Kinebatic\\Kinebatic.lib and object A:\Dev\Applications\SFML\KinebaticEngine\\bin\x64\Debug\Kinebatic\\Kinebatic.exp
+  Scene.cpp
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(49,39): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(49,39): warning C4244:         with
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(49,39): warning C4244:         [
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(49,39): warning C4244:             T=float
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(49,39): warning C4244:         ]
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(49,36): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(49,36): warning C4244:         with
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(49,36): warning C4244:         [
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(49,36): warning C4244:             T=float
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(49,36): warning C4244:         ]
+  kbpdh.cpp
+  Application.cpp
   Kinebatic.vcxproj -> A:\Dev\Applications\SFML\KinebaticEngine\bin\x64\Debug\Kinebatic\Kinebatic.dll
           1 file(s) copied.

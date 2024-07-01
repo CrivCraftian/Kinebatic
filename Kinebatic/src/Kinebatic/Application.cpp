@@ -2,16 +2,13 @@
 #include "Application.h"
 #include "Log.h"
 
-namespace Kinebatic
+namespace kb
 {
 	sf::RenderWindow* window;
 
 	Application::Application()
 	{
-		Kinebatic::Log::Init();
-		StartWindow();
-
-		KB_CORE_INFO("Kinebatic Engine Initialized");
+		Initialise();
 	}
 
 	Application::~Application()
@@ -24,10 +21,19 @@ namespace Kinebatic
 		window = nullptr;
 	}
 
+	inline void Application::Initialise()
+	{
+		kb::Log::Init();
+		StartWindow();
+
+		kb::Core::SetWindow(window);
+		KB_CORE_INFO("Kinebatic Engine Initialized");
+	}
+
 	void Application::StartWindow()
 	{
 		KB_CORE_INFO("Starting Window");
-		windowSettings.antialiasingLevel = 8;
+		windowSettings.antialiasingLevel = 0;
 		window = new sf::RenderWindow(sf::VideoMode(600, 600), "SFML works!", sf::Style::Default, windowSettings);
 	}
 
@@ -69,6 +75,7 @@ namespace Kinebatic
 			window->display();
 		}
 	}
+
 	void Application::SetScene(Scene* scene)
 	{
 		_currentScene = scene;

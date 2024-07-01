@@ -2,8 +2,11 @@
 
 #include "GameObject.h"
 #include "Kinebatic/Core.h"
+#include "Kinebatic\Log.h"
 
-namespace Kinebatic
+#include <SFML\System.hpp>
+
+namespace kb
 {
 	class KB_API Scene
 	{

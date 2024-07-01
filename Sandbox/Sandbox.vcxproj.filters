@@ -24,12 +24,18 @@
     <ClCompile Include="src\GameObjects\Vertex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\GameObjects\Tree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Scenes\Level1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\GameObjects\Vertex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObjects\Tree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

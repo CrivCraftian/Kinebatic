@@ -11,6 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Kinebatic\Core\Shape.cpp" />
     <ClCompile Include="src\Kinebatic\Core.cpp" />
     <ClCompile Include="src\Kinebatic\Log.cpp" />
     <ClCompile Include="src\Kinebatic\Core\GameObject.cpp" />
@@ -19,6 +20,7 @@
     <ClCompile Include="src\Kinebatic\Application.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Kinebatic\Core\Shape.h" />
     <ClInclude Include="src\Kinebatic\Log.h" />
     <ClInclude Include="src\Kinebatic\Core\GameObject.h" />
     <ClInclude Include="src\Kinebatic\Core\Scene.h" />
@@ -76,7 +78,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>SFML_STATIC;KB_PLATFORM_WINDOWS;KB_BUILD_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>KB_PLATFORM_WINDOWS;KB_BUILD_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)\Kinebatic\vendor\spdlog\include;$(SolutionDir)Kinebatic\src;$(ProjectDir)src\Core;$(SolutionDir)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
@@ -87,7 +89,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)\lib;</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-system-d.lib;sfml-window-d.lib;sfml-graphics-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ImportLibrary>$(OutDir)\$(ProjectName).lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
@@ -100,11 +102,11 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>SFML_STATIC;KB_PLATFORM_WINDOWS;KB_BUILD_DLL;KB_RELEASE;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>KB_PLATFORM_WINDOWS;KB_BUILD_DLL;KB_RELEASE;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)\Kinebatic\vendor\spdlog\include;$(SolutionDir)Kinebatic\src;$(SolutionDir)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>kbpdh.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
@@ -113,7 +115,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)/lib;</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-system.lib;sfml-window.lib;sfml-graphics.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ImportLibrary>$(OutDir)\$(ProjectName).lib</ImportLibrary>
     </Link>
     <PostBuildEvent>

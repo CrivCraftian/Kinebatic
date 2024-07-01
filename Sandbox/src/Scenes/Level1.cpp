@@ -1,11 +1,11 @@
 #include "Level1.h"
-#include "Vertex.h"
+#include "Tree.h"
 
 namespace KBProgram
 {
 	Level1::Level1()
 	{
-		AddObject(new KBProgram::Vertex(), 0, 0);
+
 	}
 
 	Level1::~Level1()
@@ -15,17 +15,19 @@ namespace KBProgram
 
 	void Level1::Start()
 	{
-		Kinebatic::Scene::Start();
+		kb::Scene::Start();
+
+		AddObject(new KBProgram::Tree(), 0, 0);
 
 	}
 
 	void Level1::Update()
 	{
-		Kinebatic::Scene::Update();
+		kb::Scene::Update();
 	}
 
 	void Level1::End()
 	{
-		Kinebatic::Scene::End();
+		kb::Scene::End();
 	}
 }

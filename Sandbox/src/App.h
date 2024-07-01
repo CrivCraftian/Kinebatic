@@ -4,11 +4,11 @@
 #include <iostream>
 #include "Scenes/Level1.h"
 
-class Sandbox : public Kinebatic::Application{
+class Sandbox : public kb::Application{
 
 };
 
-Kinebatic::Application* Kinebatic::CreateApplication()
+kb::Application* kb::CreateApplication()
 {
 	Sandbox* sandbox = new Sandbox();
     sandbox->SetScene(new KBProgram::Level1());

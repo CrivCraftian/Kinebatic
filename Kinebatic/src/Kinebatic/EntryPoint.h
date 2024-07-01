@@ -2,11 +2,11 @@
 
 #ifdef KB_PLATFORM_WINDOWS
 
-extern Kinebatic::Application* Kinebatic::CreateApplication();
+extern kb::Application* kb::CreateApplication();
 
 int main(int argc, char** argv)
 {
-	auto app = Kinebatic::CreateApplication();
+	auto app = kb::CreateApplication();
 	app->Run();
 	delete app;
 }

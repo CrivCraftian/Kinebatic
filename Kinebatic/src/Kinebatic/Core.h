@@ -12,17 +12,23 @@
 #endif // !1
 
 #include <string>
+#include "kbpdh.h"
 
-#define KB_SL_DIR "\"${SolutionDir}\""
+#include <SFML\Graphics.hpp>
 
-namespace Kinebatic
+#define KB_SL_DIR R"($(SolutionDir))"
+
+namespace kb
 {
 	class KB_API Core
 	{
 	public:
 		template<typename T>
 		static T GetResource(std::string fileName);
-	private:
 
+		static void SetWindow(sf::RenderWindow* window);
+		static sf::RenderWindow* GetWindow();
+	private:
+		static sf::RenderWindow* _window;
 	};
 }

@@ -3,7 +3,7 @@
 
 namespace KBProgram
 {
-	class Vertex : public Kinebatic::GameObject
+	class Vertex : public kb::GameObject
 	{
 	public:
 		Vertex();

@@ -4,7 +4,10 @@
 #include "kbpdh.h"
 #include "Core/Scene.h"
 
-namespace Kinebatic
+#include <SFML\Window.hpp>
+#include <SFML\Graphics.hpp>
+
+namespace kb
 {
 	class KB_API Application
 	{
@@ -12,6 +15,7 @@ namespace Kinebatic
 		inline Application();
 		inline virtual ~Application();
 
+		inline void Initialise();
 		inline void StartWindow();
 		inline void End();
 
@@ -22,6 +26,8 @@ namespace Kinebatic
 		sf::ContextSettings windowSettings;
 
 		Scene* _currentScene;
+
+		sf::CircleShape shape;
 	};
 
 	Application* CreateApplication();

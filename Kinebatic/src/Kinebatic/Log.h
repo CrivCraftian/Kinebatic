@@ -4,7 +4,7 @@
 #include "Core.h"
 #include "spdlog/spdlog.h"
 
-namespace Kinebatic
+namespace kb
 {
 	class KB_API Log
 	{
@@ -22,15 +22,15 @@ namespace Kinebatic
 }
 
 // Core Log macros
-#define KB_CORE_ERROR(...)  ::Kinebatic::Log::GetCoreLogger()->error(__VA_ARGS__)
-#define KB_CORE_WARN(...)   ::Kinebatic::Log::GetCoreLogger()->warn(__VA_ARGS__)
-#define KB_CORE_INFO(...)   ::Kinebatic::Log::GetCoreLogger()->info(__VA_ARGS__)
-#define KB_CORE_TRACE(...)  ::Kinebatic::Log::GetCoreLogger()->trace(__VA_ARGS__)
-#define KB_CORE_FATAL(...)  ::Kinebatic::Log::GetCoreLogger()->fatal(__VA_ARGS__)
+#define KB_CORE_ERROR(...)  ::kb::Log::GetCoreLogger()->error(__VA_ARGS__)
+#define KB_CORE_WARN(...)   ::kb::Log::GetCoreLogger()->warn(__VA_ARGS__)
+#define KB_CORE_INFO(...)   ::kb::Log::GetCoreLogger()->info(__VA_ARGS__)
+#define KB_CORE_TRACE(...)  ::kb::Log::GetCoreLogger()->trace(__VA_ARGS__)
+#define KB_CORE_FATAL(...)  ::kb::Log::GetCoreLogger()->fatal(__VA_ARGS__)
 
 // Client log macros
-#define KB_ERROR(...)  ::Kinebatic::Log::GetClientLogger()->error(__VA_ARGS__)
-#define KB_WARN(...)   ::Kinebatic::Log::GetClientLogger()->warn(__VA_ARGS__)
-#define KB_INFO(...)   ::Kinebatic::Log::GetClientLogger()->info(__VA_ARGS__)
-#define KB_TRACE(...)  ::Kinebatic::Log::GetClientLogger()->trace(__VA_ARGS__)
-#define KB_FATAL(...)  ::Kinebatic::Log::GetClientLogger()->fatal(__VA_ARGS__)
+#define KB_ERROR(...)  ::kb::Log::GetClientLogger()->error(__VA_ARGS__)
+#define KB_WARN(...)   ::kb::Log::GetClientLogger()->warn(__VA_ARGS__)
+#define KB_INFO(...)   ::kb::Log::GetClientLogger()->info(__VA_ARGS__)
+#define KB_TRACE(...)  ::kb::Log::GetClientLogger()->trace(__VA_ARGS__)
+#define KB_FATAL(...)  ::kb::Log::GetClientLogger()->fatal(__VA_ARGS__)
