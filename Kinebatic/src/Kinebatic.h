@@ -7,3 +7,5 @@
 #include "Kinebatic/Core/Shape.h"
 #include "Kinebatic/Core/GameObject.h"
 #include "Kinebatic/Core/Scene.h"
+
+#include "Kinebatic\Core\Random.h"

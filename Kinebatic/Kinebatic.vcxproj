@@ -11,6 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Kinebatic\GameInput.cpp" />
+    <ClCompile Include="src\Kinebatic\Core\Random.cpp" />
     <ClCompile Include="src\Kinebatic\Core\Shape.cpp" />
     <ClCompile Include="src\Kinebatic\Core.cpp" />
     <ClCompile Include="src\Kinebatic\Log.cpp" />
@@ -20,6 +22,8 @@
     <ClCompile Include="src\Kinebatic\Application.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Kinebatic\GameInput.h" />
+    <ClInclude Include="src\Kinebatic\Core\Random.h" />
     <ClInclude Include="src\Kinebatic\Core\Shape.h" />
     <ClInclude Include="src\Kinebatic\Log.h" />
     <ClInclude Include="src\Kinebatic\Core\GameObject.h" />

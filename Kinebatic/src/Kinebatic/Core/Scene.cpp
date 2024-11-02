@@ -24,6 +24,8 @@ namespace kb
 
 	void Scene::Update()
 	{
+		UpdateObjects();
+
 		for (auto object : *_gameobjects)
 		{
 			object->Update();
@@ -46,9 +48,27 @@ namespace kb
 	}
 	void Scene::AddObject(GameObject* object, int x, int y)
 	{
-		object->SetPosition(sf::Vector2f(x, y));
-		_gameobjects->push_back(object);
+		KB_CORE_INFO("Added Gameobject");
 
-		object->Start();
+		object->SetPosition(sf::Vector2f(x, y));
+		object->SetScene(this);
+		_addedobjects->push_back(object);
+	}
+
+	void Scene::UpdateObjects()
+	{
+		if (!_addedobjects->empty())
+		{
+			KB_CORE_INFO("Adding Objects to screen");
+
+			for(GameObject* obj : *_addedobjects)
+			{
+				KB_CORE_INFO("Pushed Object to screen");
+				_gameobjects->push_back(obj);
+				obj->Start();
+			}
+
+			_addedobjects->clear();
+		}
 	}
 }

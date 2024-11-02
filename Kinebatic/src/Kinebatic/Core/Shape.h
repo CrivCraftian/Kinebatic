@@ -17,6 +17,8 @@ namespace kb
 
 		Vector2(float x, float y)
 			: x(x), y(y) {}
+
+		void Normalize();
 	};
 
 	class KB_API Shape
@@ -35,6 +37,7 @@ namespace kb
 		Vector2 p1, p2;
 		Line();
 		Line(Vector2 p1, Vector2 p2);
+		Line(Vector2 startPosition, float rotation, int distance);
 		~Line();
 
 		void SetPosition(Vector2 pos1, Vector2 pos2);
@@ -42,5 +45,22 @@ namespace kb
 
 	private:
 		sf::Vertex _line[2];
+	};
+
+	class KB_API Circle : public Shape
+	{
+	public:
+		Circle();
+		Circle(float radius);
+		~Circle();
+
+		void SetRadius(float radius);
+		float GetRadius();
+		void SetPosition(Vector2 position);
+		Vector2 GetPosition();
+		virtual void Draw(sf::RenderWindow* window) override;
+
+	private:
+		sf::CircleShape shape;
 	};
 }

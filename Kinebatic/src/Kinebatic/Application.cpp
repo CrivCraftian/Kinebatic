@@ -34,7 +34,7 @@ namespace kb
 	{
 		KB_CORE_INFO("Starting Window");
 		windowSettings.antialiasingLevel = 0;
-		window = new sf::RenderWindow(sf::VideoMode(600, 600), "SFML works!", sf::Style::Default, windowSettings);
+		window = new sf::RenderWindow(sf::VideoMode(1920, 1080), "SFML works!", sf::Style::Default, windowSettings);
 	}
 
 	void Application::End()

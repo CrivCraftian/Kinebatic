@@ -17,6 +17,7 @@
 #include <SFML\Graphics.hpp>
 
 #define KB_SL_DIR R"($(SolutionDir))"
+#define DEG_TO_RAD(x) ((x) * (3.14159265358979323846 / 180.0))
 
 namespace kb
 {

@@ -16,6 +16,7 @@ namespace kb
 
 	void GameObject::Awake()
 	{
+
 	}
 
 	void GameObject::Start()
@@ -52,13 +53,47 @@ namespace kb
 		}
 	}
 
+	const sf::Vector2f& GameObject::GetPosition()
+	{
+		return _position;
+	}
+
 	std::vector<Shape*> GameObject::GetShapes()
 	{
 		return _shapesOnScreens;
 	}
 
-	void GameObject::AddShape(Shape* shape)
+	void GameObject::SetScene(Scene* s)
 	{
+		currentScene = s;
+	}
+
+	void GameObject::AddShape(Shape* shape) {
 		_shapesOnScreens.push_back(shape);
+	}
+
+	void GameObject::RemoveShape(Shape* shape) {
+		for (int i = 0; i < _shapesOnScreens.size(); i++)
+		{
+			if (_shapesOnScreens[i] != shape)
+			{
+				continue;
+			}
+
+			_shapesOnScreens[i] = nullptr;
+			return;
+		}
+
+		KB_CORE_WARN("Could not find shape");
+	}
+	void GameObject::ClearShapes() {
+		for (int i = 0; i < _shapesOnScreens.size(); i++)
+		{
+			_shapesOnScreens[i] = nullptr;
+		}
+	}
+
+	Scene* GameObject::GetScene() {
+		return currentScene;
 	}
 }

@@ -1,6 +1,6 @@
 #pragma once
 
-#include <math.h>
+#include <cmath>
 #include <vector>
 #include <string>
 #include <iostream>
@@ -13,5 +13,6 @@
 #include <unordered_set>
 #include <utility>
 #include <array>
+#include <random>
 
 

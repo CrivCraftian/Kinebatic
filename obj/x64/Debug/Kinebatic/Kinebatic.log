@@ -1,21 +1,29 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(516,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  GameInput.cpp
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\GameInput.h(7,15): warning C4091: 'static ': ignored on left of 'kb::GameInput' when no variable is declared
+  (compiling source file 'src/Kinebatic/GameInput.cpp')
+  
+  Random.cpp
   Shape.cpp
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Shape.cpp(25,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Shape.cpp(57,15): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
   Core.cpp
   Log.cpp
   GameObject.cpp
   Scene.cpp
-A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(49,39): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(49,39): warning C4244:         with
-A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(49,39): warning C4244:         [
-A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(49,39): warning C4244:             T=float
-A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(49,39): warning C4244:         ]
-A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(49,36): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(49,36): warning C4244:         with
-A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(49,36): warning C4244:         [
-A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(49,36): warning C4244:             T=float
-A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(49,36): warning C4244:         ]
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(53,39): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(53,39): warning C4244:         with
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(53,39): warning C4244:         [
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(53,39): warning C4244:             T=float
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(53,39): warning C4244:         ]
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(53,36): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(53,36): warning C4244:         with
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(53,36): warning C4244:         [
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(53,36): warning C4244:             T=float
+A:\Dev\Applications\SFML\KinebaticEngine\Kinebatic\src\Kinebatic\Core\Scene.cpp(53,36): warning C4244:         ]
   kbpdh.cpp
   Application.cpp
+     Creating library A:\Dev\Applications\SFML\KinebaticEngine\\bin\x64\Debug\Kinebatic\\Kinebatic.lib and object A:\Dev\Applications\SFML\KinebaticEngine\\bin\x64\Debug\Kinebatic\\Kinebatic.exp
   Kinebatic.vcxproj -> A:\Dev\Applications\SFML\KinebaticEngine\bin\x64\Debug\Kinebatic\Kinebatic.dll
           1 file(s) copied.

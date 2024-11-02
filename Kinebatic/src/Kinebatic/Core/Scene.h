@@ -21,6 +21,8 @@ namespace kb
 		void AddObject(GameObject* object, int x, int y);
 
 	private:
+		void UpdateObjects();
+
 		std::unique_ptr<std::vector<GameObject*>> _gameobjects;
 		std::unique_ptr<std::vector<GameObject*>> _addedobjects;
 		std::unique_ptr<std::vector<GameObject*>> _removedobjects;

@@ -102,6 +102,9 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\GameObjects\Planet.cpp" />
+    <ClCompile Include="src\GameObjects\Projectile.cpp" />
+    <ClCompile Include="src\GameObjects\Plant.cpp" />
     <ClCompile Include="src\GameObjects\Vertex.cpp" />
     <ClCompile Include="src\Scenes\Level1.cpp" />
     <ClCompile Include="src\App.h" />
@@ -113,6 +116,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\GameObjects\Planet.h" />
+    <ClInclude Include="src\GameObjects\Projectile.h" />
+    <ClInclude Include="src\GameObjects\Plant.h" />
     <ClInclude Include="src\GameObjects\Vertex.h" />
     <ClInclude Include="src\Scenes\Level1.h" />
     <ClInclude Include="src\GameObjects\Tree.h" />
